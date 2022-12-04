@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const myRoute:Routes=[
   {
@@ -28,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     HomeComponent,
     CareersComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
