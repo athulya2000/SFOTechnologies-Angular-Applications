@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const myRoute:Routes=[
   {
@@ -42,6 +44,10 @@ const myRoute:Routes=[
   {
     path:"registration",
     component:RegistrationComponent
+  },
+  {
+    path:"viewcourse",
+    component:ViewCourseComponent
   }
 ]
 
@@ -55,13 +61,16 @@ const myRoute:Routes=[
     AdminLoginComponent,
     EmployeeLoginComponent,
     NavBar1Component,
-    RegistrationComponent
+    RegistrationComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
