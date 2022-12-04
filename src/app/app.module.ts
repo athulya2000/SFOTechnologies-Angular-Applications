@@ -10,6 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 const myRoute:Routes=[
   {
@@ -41,7 +42,8 @@ const myRoute:Routes=[
     CareersComponent,
     AboutUsComponent,
     ContactUsComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
