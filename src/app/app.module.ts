@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -21,6 +23,14 @@ const myRoute:Routes=[
   {
     path:"aboutus",
     component:AboutUsComponent
+  },
+  {
+    path:"contact",
+    component:ContactUsComponent
+  },
+  {
+    path:"admin",
+    component:AdminLoginComponent
   }
 ]
 
@@ -30,12 +40,14 @@ const myRoute:Routes=[
     HomeComponent,
     CareersComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
