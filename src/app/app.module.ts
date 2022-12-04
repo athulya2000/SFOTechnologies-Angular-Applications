@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 
 const myRoute:Routes=[
   {
@@ -32,6 +33,10 @@ const myRoute:Routes=[
   {
     path:"admin",
     component:AdminLoginComponent
+  },
+  {
+    path:"employeelogin",
+    component:EmployeeLoginComponent
   }
 ]
 
@@ -43,7 +48,8 @@ const myRoute:Routes=[
     AboutUsComponent,
     ContactUsComponent,
     AdminLoginComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    NavBar1Component
   ],
   imports: [
     BrowserModule,
