@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const myRoute:Routes=[
   {
@@ -15,6 +16,10 @@ const myRoute:Routes=[
   {
     path:"careers",
     component:CareersComponent
+  },
+  {
+    path:"aboutus",
+    component:AboutUsComponent
   }
 ]
 
@@ -22,7 +27,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     HomeComponent,
-    CareersComponent
+    CareersComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
