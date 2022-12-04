@@ -11,10 +11,10 @@ export class ViewFriendsComponent {
 constructor(private api:ApiService){
   api.fetchFriends().subscribe(
     (response)=>{
-      this.data=response
+      this.friends=response
     }
   )
 }
 
-  data:any=[]
+friends:any=[]
 }
